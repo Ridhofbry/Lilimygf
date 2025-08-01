@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lilimygirl 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="judul">Portal of Our Moments 💖</h1>
+
+    <div class="portal" onclick="openPortal()">
+      <div class="circle-glow"></div>
+      <span class="click-me">Klik Portal</span>
+    </div>
+
+    <div class="transition-overlay" id="transitionOverlay">
+      <div class="pulse-circle"></div>
+    </div>
+
+    <div class="moment-wrapper" id="momentWrapper">
+      <div class="moment-box" id="momentBox">
+        <img src="assets/moment1.jpg" alt="Moment" id="momentImage"/>
+        <p id="momentCaption">"Kenangan manis pertama kita..."</p>
+        <h2 class="gf-text">Happy Girlfriend Day 💕</h2>
+        <button class="next-btn" onclick="showNext()">Next ➜</button>
+        <a class="to-letter-btn" href="#letterPage">Buka Surat 📜</a>
+      </div>
+    </div>
+
+    <div class="letter-section" id="letterPage">
+      <h2 class="letter-title">Surat Untukmu</h2>
+      <div class="letter-content">
+        <p>Sayangku tersayang,</p>
+        <p>Aku bersyukur atas setiap detik yang kita lewati bersama. Kamu bukan cuma pasangan, tapi teman hidup yang membuat semua terasa lebih indah. Aku senang bisa tumbuh, tertawa, dan mencintaimu setiap hari.</p>
+        <p>Terima kasih telah hadir di hidupku. Ini hanya awal dari kisah panjang kita 💌</p>
+        <p>Dengan penuh cinta,</p>
+        <p><strong>Pasanganmu 💖</strong></p>
+      </div>
+      <div class="reply-box">
+        <h3>Balas Surat Ini ✍️</h3>
+        <textarea placeholder="Tulis balasan kamu di sini..."></textarea>
+        <button onclick="alert('Pesan kamu sudah dikirim (secara simbolis hehe) 😘')">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="stickerContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
